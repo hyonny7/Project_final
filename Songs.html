@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎶Songs</title>
+    <link rel="stylesheet" href="songs.css">
+    <link rel="stylesheet" href="menu-style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="menu.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        var currentContentId = null; // 현재 표시 중인 콘텐츠 ID 설정
+
+    function showContent(contentId, event) {
+    // 현재 표시 중인 콘텐츠 숨기기
+    if (currentContentId !== null) {
+        document.getElementById(currentContentId).style.display = 'none';
+    }
+    // 새로운 콘텐츠 표시
+    document.getElementById(contentId).style.display = 'block';
+    // 현재 콘텐츠 ID 업데이트
+    currentContentId = contentId;
+    // 초기 메시지 숨기기
+    document.querySelector('.initial-message').style.display = 'none';
+
+    // 메인 테두리 색상 변경
+    var mainElement = document.querySelector('.rrrr');
+    switch (contentId) {
+        case 'content1':
+            mainElement.style.borderColor = '#a50034';
+            break;
+        case 'content2':
+            mainElement.style.borderColor = 'black';
+            break;
+        case 'content3':
+            mainElement.style.borderColor = '#ce0e2d';
+            break;
+        case 'content4':
+            mainElement.style.borderColor = '#304578';
+            break;
+        case 'content5':
+            mainElement.style.borderColor = '#131230';
+            break;
+        case 'content6':
+            mainElement.style.borderColor = '#ff0000';
+            break;
+        case 'content7':
+            mainElement.style.borderColor = '#111e3f';
+            break;
+        case 'content8':
+            mainElement.style.borderColor = '#3c65ad';
+            break;
+        case 'content9':
+            mainElement.style.borderColor = '#ff6600';
+            break;
+        case 'content10':
+            mainElement.style.borderColor = '#6c1724';
+            break;
+    }       
+
+}
+</script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="hover-content">
+            <br><br>
+            <h2><a href="Home.html">🏠Home</a></h2><br>
+            <h3><a href="Rules.html">⚠️Rules</a></h3>
+            <h3><a href="Teams.html">👥Teams</a></h3>
+            <h3><a href="Songs.html">🎶Songs</a></h3>
+        </div>
+        <div class="content"> MENU </div>
+    </div>
+    <div class="header"><h1>🎶Songs</h1></div>
+    <div class="main">
+    <div class="llll">
+        <div class="button b1" onclick="showContent('content1')"><a href="#">LG 트윈스</a></div>
+        <div class="button b2" onclick="showContent('content2')"><a href="#">kt wiz</a></div>
+        <div class="button b3" onclick="showContent('content3')"><a href="#">SSG 랜더스</a></div>
+        <div class="button b4" onclick="showContent('content4')"><a href="#">NC 다이노스</a></div>
+        <div class="button b5" onclick="showContent('content5')"><a href="#">두산 베어스</a></div>
+        <div class="button b6" onclick="showContent('content6')"><a href="#">KIA 타이거즈</a></div>
+        <div class="button b7" onclick="showContent('content7')"><a href="#">롯데 자이언츠</a></div>
+        <div class="button b8" onclick="showContent('content8')"><a href="#">삼성 라이온즈</a></div>
+        <div class="button b9" onclick="showContent('content9')"><a href="#">한화 이글스</a></div>
+        <div class="button b10" onclick="showContent('content10')"><a href="#">키움 히어로즈</a></div>
+    </div>
+    <div class="rrrr">
+        <section id="songs"><br>
+            <div class="initial-message">
+                <br><h2>팀 별 응원가를 만나보세요!</h2><br>
+                <p>10개 구단 응원가 미리보기 ✔️</p>
+                <iframe src="https://www.youtube.com/embed/wC9k_CPkXvU?si=7lYDELwxkKGVyp6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+
+            <div id="content1" class="team-content">
+                <h2>LG 트윈스</h2><br><br>
+                <p>대표 응원가 🎤'서울의 아리아'</p>
+                <iframe width="600" src="https://www.youtube.com/embed/6g4_6PSUeNg?si=n0GC-q4EucvpdqQV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>팀 응원가 모음</p>
+                <iframe width="600" src="https://www.youtube.com/embed/Y-cBDnUl5k4?si=uXcO35R2tkzMXbOo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                
+                <br><p>선수별 응원가 모음</p>
+                <iframe width="600" src="https://www.youtube.com/embed/2TacjkgUkdI?si=NTV9F0x2hEEMwBJF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <br><br><br><br><br><br><br><br>
+            </div>
+            <div id="content2" class="team-content">
+                <h2>kt wiz</h2><br><br>
+                <p>대표 응원가 🎤'마법의 성'</p>
+                <iframe width="600" src="https://www.youtube.com/embed/rHYkpMF77Lo?si=8Kc83KjdBn64zF6h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>팀 응원가 모음</p>
+                <iframe width="600" src="https://www.youtube.com/embed/yw3wPy5mMk0?si=MYdk19eriOpNumrc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>선수 응원가 모음</p>
+                <iframe width="600" src="https://www.youtube.com/embed/Zv3TRWyCzlo?si=5ALfHqfW74sc8IT7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				<br><br><br><br><br><br><br><br>
+            </div>
+            <div id="content3" class="team-content">
+                <h2>SSG 랜더스</h2><br><br>
+                    <p>대표 응원가 🎤'투혼의 랜더스'</p>
+                    <iframe width="600" src="https://www.youtube.com/embed/XlE8UFmkLcA?si=FotpS5KvPZRNpPG8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>팀 응원가 모음</p>
+                    <iframe width="600" src="https://www.youtube.com/embed/rqm0DcFw6qQ?si=xBmwCGKpnfVApu81" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>선수 응원가 모음</p>
+                    <iframe width="600" src="https://www.youtube.com/embed/ieo33KCfSJ4?si=xBnLBwOdfYOC-KG-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                	<br><br><br><br><br><br><br><br>
+            </div>
+            <div id="content4" class="team-content">
+                <h2>NC 다이노스</h2><br><br>
+                    <p>대표 응원가 🎤'마산 스트리트'</p>
+                    <iframe width="600" src="https://www.youtube.com/embed/irCW11oVQ30?si=-m39eddv9WCyFbmU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>팀 응원가 모음</p>
+                    <iframe width="600" src="https://www.youtube.com/embed/RgGDGZR8wGI?si=TcYl2HCq3te1I0DE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>선수 응원가 모음</p>
+                    <iframe width="600" src="https://www.youtube.com/embed/6SKuiZtk17E?si=3u1Vgdg6_QQ-yEkJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                	<br><br><br><br><br><br><br><br>
+                </div>
+            <div id="content5" class="team-content">
+                <h2>두산 베어스</h2><br><br>
+                    <p>대표 응원가 🎤'승리를 위하여'</p>
+                    <iframe width="600"  src="https://www.youtube.com/embed/dqW2DaOjOho?si=_nB5Xt673AX4cF7U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>팀 응원가 모음</p>
+                    <iframe width="600" src="https://www.youtube.com/embed/szit-q75um4?si=Fl42yrRdD9SSf7q0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>선수 응원가 모음</p>
+                    <iframe width="600" src="https://www.youtube.com/embed/j_hQxMaE6nc?si=UQYmdjKZlD9ltF4h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					<br><br><br><br><br><br><br><br>
+            </div>
+            <div id="content6" class="team-content">
+                <h2>KIA 타이거즈</h2><br><br>
+                    <p>대표 응원가 🎤'남행열차'</p>
+                    <iframe width="600" src="https://www.youtube.com/embed/dudVNSG9foc?si=HBvDKwfskhAUnDa3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>팀 응원가 모음</p>
+                    <iframe width="600" src="https://www.youtube.com/embed/y8WgWjzhKBA?si=kHhpKQ-sRuNsH_ru" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>선수 응원가 모음</p>
+                    <iframe width="600" src="https://www.youtube.com/embed/H5gHRR5Ux-0?si=yBI_2BIOusO2kO94" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                	<br><br><br><br><br><br><br><br>
+            </div>
+            <div id="content7" class="team-content">
+                <h2>롯데 자이언츠</h2><br><br>
+                    <p>대표 응원가 🎤'부산 갈매기'</p>
+                    <iframe width="600" src="https://www.youtube.com/embed/-CLzJsuoka0?si=CKBdxT1TOd8z1XED" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>팀 응원가 모음</p>
+                    <iframe width="600"  src="https://www.youtube.com/embed/HfqKC-G3dDA?si=Y2BpxgRVWiMgJqxe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>선수 응원가 모음</p>
+                    <iframe width="600" src="https://www.youtube.com/embed/bvbomd5CLh0?si=vJuFdp5kXKJLyQQm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                	<br><br><br><br><br><br><br><br>
+            </div>
+            <div id="content8" class="team-content">
+                <h2>삼성 라이온즈</h2><br><br>
+                <p>대표 응원가 🎤'엘도라도'</p>
+                <iframe width="600"  src="https://www.youtube.com/embed/pfSHVVHlKi8?si=ex5f_IWF7pTSeP7X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <br><p>팀 응원가 모음</p>
+                <iframe width="600" src="https://www.youtube.com/embed/prjKC3-Nxj8?si=RJ4G7q6OL6-zd1t5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <br><p>선수별 응원가 모음</p>
+                <iframe width="600" src="https://www.youtube.com/embed/RJAcX4m6RZ4?si=VF6oisB-I5EL8DtQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                
+            	<br><br><br><br><br><br><br><br>
+          </div>
+            <div id="content9" class="team-content">
+                <h2>한화 이글스</h2><br><br>
+                    <p>대표 응원가 🎤'나는 행복합니다'</p>
+                    <iframe width="600" src="https://www.youtube.com/embed/Ne-EFpnJ8wA?si=QmfKH7aKhmUuh6xI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>팀 응원가 모음</p>
+                    <iframe width="600" src="https://www.youtube.com/embed/d46VYFHg3yI?si=7Di7gzPbS5TL419H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>응원가 모음</p>
+                    <iframe width="600"  src="https://www.youtube.com/embed/CiOBbj-6-gA?si=XHZFEMUs_JX8mcPG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                	<br><br><br><br><br><br><br><br>
+            </div>
+            <div id="content10" class="team-content">
+                <h2>키움 히어로즈</h2><br><br>
+                    <p>대표 응원가 🎤'영웅 출정가'</p>
+                    <iframe width="600"  src="https://www.youtube.com/embed/antR6UYqZKk?si=vJpZbsIaonjvEZV4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>응원가 모음</p>
+                    <iframe width="600" src="https://www.youtube.com/embed/OjoYnwcZMOI?si=if5pZjokbiFMDU6g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                	<br><br><br><br><br><br><br><br>
+            </div>
+        </section>
+    </div>
+    </div>
+    <div class="footer">
+        ©입문자를 위한...
+    </div>
+</body>
+</html>

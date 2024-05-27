@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baseball</title>
+    <link rel="stylesheet" href="home-style.css">
+    <link rel="stylesheet" href="menu-style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="menu.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+            $(window).scroll(function() {
+                var scrollPosition = $(window).scrollTop();
+                var header = $('.header');
+                var fadeInElements = $('.llll, .main, .rrrr, .footer');
+
+                if (scrollPosition > header.outerHeight()) {
+                    header.css('opacity', '0');
+                } else {
+                    header.css('opacity', '1');
+                }
+
+                fadeInElements.each(function(index, element) {
+                    var elementPosition = $(element).offset().top;
+                    if (scrollPosition > elementPosition - $(window).height() / 2) {
+                        $(element).css('opacity', '1');
+                    }
+                });
+            });
+    </script>
+</head>
+<body>
+    <div class="container">
+    <div class="hover-content">
+        <br><br>
+        <h2><a href="Home.html">🏠Home</a></h2><br>
+        <h3><a href="Rules.html">⚠️Rules</a></h3>
+        <h3><a href="Teams.html">👥Teams</a></h3>
+        <h3><a href="Songs.html">🎶Songs</a></h3>
+    </div>
+    <div class="content"> MENU </div>
+</div>
+    <div class="header">
+        <h1 >⚾ B A S E B A L L ⚾</h1><br><br>
+        <h3>야구 🐥입문자🐥들을 위한 웹페이지</h3>
+        <br><br><br><p>아래로 스크롤⬇️ 하세요</p>
+    </div>
+    <div class="main">
+        <section id="intro"><br><br>
+            <h2>이 웹페이지는요...❕</h2><br><br>
+            <h3>
+                🤓야구 시즌이 시작되고 야구에 빠져 있는 두 학생이 만든 웹페이지입니다!<br><br>
+                🛠️야구를 처음 접하는 입문자를 위해 기본적인 야구 지식들과 경기 일정들을 한 곳에서 보도록 페이지를 설계했습니다.<br><br>
+                ℹ️자신이 관심이 가거나 응원하는 팀의 정보를 읽어볼 수 있고 다른 구단들의 정보를 볼 수도 있습니다!<br><br>
+                글뿐만 아니라 영상, 사진, 오디오 형태도 활용하여 최대한 직관적이고 한눈에 알아보도록 디자인하였습니다!<br><br>
+                최근 야구의 인기가 치솟으면서 진정한 ‘야구 문화’가 한국에 자리잡게 되었습니다.<br><br>
+                특히 야구는 어려운 룰로 인해 경기를 즐기기까지 시간이 걸리는 스포츠이지만 이 웹페이지를 이용함으로써 더 많은 사람들이 야구 경기 관람에 관심을 갖게되고 응원 문화에도 매력을 느끼게 될 것입니다!<br><br>
+                🧢⚾
+            </h3><br><br><br><br>
+        </section>
+    </div>
+    <div class="footer">
+        ©입문자를 위한...
+    </div>
+</body>
+</html>

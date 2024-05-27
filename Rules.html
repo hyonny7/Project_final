@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚠️Rules⚠️</title>
+    <link rel="stylesheet" href="rules.css">
+    <link rel="stylesheet" href="menu-style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="menu.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        var currentContentId = null; // 현재 표시 중인 콘텐츠 ID 설정
+        
+        function showContent(contentId) {
+            // 현재 표시 중인 콘텐츠 숨기기
+            if (currentContentId !== null) {
+                document.getElementById(currentContentId).style.display = 'none';
+            }
+            // 새로운 콘텐츠 표시
+            document.getElementById(contentId).style.display = 'block';
+            // 현재 콘텐츠 ID 업데이트
+            currentContentId = contentId;
+            // 초기 메시지 숨기기
+            document.querySelector('.initial-message').style.display = 'none';
+        }
+      
+      
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="hover-content">
+            <br><br>
+            <h2><a href="Home.html">🏠Home</a></h2><br>
+            <h3><a href="Rules.html">⚠️Rules</a></h3>
+            <h3><a href="Teams.html">👥Teams</a></h3>
+            <h3><a href="Songs.html">🎶Songs</a></h3>
+
+        </div>
+        <div class="content"> MENU </div>
+    </div>
+    <div class="header"><h1>⚠️Rules⚠️</h1></div>
+    <div class="main">
+    <div class="llll">
+        <div class="button b4" onclick="showContent('content4')"><a href="#">역사</a></div>
+        <div class="button b1" onclick="showContent('content1')"><a href="#">개요</a></div>
+        <div class="button b3" onclick="showContent('content3')"><a href="#">경기 진행</a></div>
+        <div class="button b2" onclick="showContent('content2')"><a href="#">읽는 법</a></div>
+    </div>
+    <div class="rrrr">
+        <section id="rules"><br>
+            <div class="initial-message">
+                <br><h2>원하는 내용을 클릭하세요!</h2>
+                <p>✍️ 야구에 대해 공부해보세요! </p><br><br><br><br><br><br><br><br><br><br><br>
+            </ul>
+            </div>
+
+            <div id="content1" class="team-content">
+                <br><h2>개요</h2><br>
+                <h4>두 팀이 9회에 걸쳐 서로 공격과 수비를 번갈아 하여 얻은 점수로 승패를 겨루는 구기이다. 공격측은 타순에 따라 상대 투수의 공을 치고 1·2·3루를 거쳐 홈으로 돌아오면 점수을 얻는다.<br>
+                </h4><br><br>
+                    <ul>
+                        <li>
+                            <h3>포지션</h3> <br>_수비할 때 9명의 선수들이 수비를 맡는 각자의 위치
+                            <br><br><p>
+                                <b>투수(P)</b>:<br> 경기장 중앙 투수판(마운드)에 서서 홈플레이트 쪽으로 공을 던지는 사람. <br>
+                                <br><b>포수(C)</b>:<br> 홈플레이트 뒤에 앉아 투수의 공을 받는 선수.<br>
+                                <br><b>내야수(IC)</b>:<br> 1루수(1B), 2루수(2B), 유격수(SS), 3루수(3B)가 있다. 1-2-3루수는 각 루를 수비하며 유격수는 2루와 3루 사이에서 수비를 한다.
+                            </p>
+                        </li>
+                    </ul><br>
+                    <ul>
+                        <li>
+                        <h3>야구 경기장</h3> <br>_내야, 외야, 파울그라운드, 관람석, 불펜, 더그아웃으로 되어있다.
+                        <br><br><p>
+                            <b>내야</b>:<br> 홈(홈플레이트), 1루, 2루, 3루의 4개의 베이스가 있다. 정사각형이다.<br>
+                            <br><b>투구판</b>:<br> 홈에서 약 18.44m 떨어진 곳에 있다. 마운드는 투구판 중심으로 한 다른 곳보다 조금 높은 지형이다.<br>
+                            <br><b>1,2,3루</b>:<br> 서로 약 27.43m의 거리로 떨어져 있다.<br>
+                            <br><b>외야</b>:<br> 아웃필드라고 하며 파울라인 안쪽의 부채꼴 형태에서 내야를 제외한 부분이다. 홈과 펜스 중앙의 백그린 사이의 거리는 105m 이상이어야 하며 홈과 파울라인 끝 사이의 거리는 91m 이상이어야 한다.<br>
+                            <br><b>불펜</b>:<br> 투수들이 몸을 푸는 장소이다.<br>
+                            <br><b>더그아웃</b>:<br> 선수들이 대기하며 경기를 준비하는 장소이다.
+                        </p>
+                        </li>
+                    </ul>
+            </div>
+
+            <div id="content2" class="team-content">
+                <br><h2>읽는 법</h2><br>
+                <ul>
+                    <li>
+                        <h3>스코어보드</h3><br><br>
+                        <img src="scoreboard.jpg">
+                        <p>
+                            가장 위에는 베이스에 주자를 표시하고 현재 투수와 심판진을 표시한다.<br><br>
+                            양쪽 팀명 밑에 있는 1~9, P는 <b>타순</b>과 <b>선발투수</b>를 말한다.<br><br>
+                            맨 밑에는 1~12회 까지의 각 팀별 점수를 기록한 것이다.<br><br>
+                            그 옆에 <b>R</b> 점수, <b>H</b> 안타 수, <b>E</b> 에러 수, <b>B</b> 볼넷 수를 기록한다.
+                            가운데에는 현재 타석에 있는 선수를 소개한다.<br><br>
+                            오른쪽 구석에는 <b>B</b> 볼, <b>S</b> 스트라이크, <b>O</b> 아웃을 표시한다.<br>
+                        </p>
+                    </li><br>
+                    <li>
+                        <h3></h3>
+                    </li>
+                </ul>
+            </div>
+            <div id="content3" class="team-content">
+                <br><h2>경기 진행</h2><br>
+                용어/ 방법/ 규칙<br><br>
+                <ul>
+                    <li>
+                        <h3>경기 용어</h3>
+                        <p>
+                            <b>낫아웃</b>:<br> 투수가 던진 세번째 스트라이크를 포수가 받지 못해 삼진 아웃이 되지 않은 경우.<br>
+                            <br><b>데드볼</b>:<br> 투수가 던진 공이 타자 몸에 맞았을 때. (사사구, 몸맞공이라고도 한다.)<br>
+                            <br><b>빈볼</b>:<br> 투수가 타자를 위협하기 위해 타자의 머리로 투구하는 것.<br>
+                            <br><b>도루</b>:<br> 주자가 타이밍을 보고 다음 베이스로 가는 것.<br>
+                            <br><b>번트</b>:<br> 공에 배트를 가볍게 밀어 공을 앞에 짧게 내야에 굴리는 타법.<br>
+                            <br><b>보크</b>:<br> 누 상에 주자가 있을 때 투수가 규칙에 어긋나는 투구 동작을 한 경우, 주자는 한 베이스씩 진루한다.<br>
+                            <br><b>안타</b>:<br> 타자가 수비 팀의 실수 없이 안전하게 누로 진루하게 친 타구.<br>
+                            <br><b>홈런</b>:<br> 타자가 경기장의 담장을 넘긴 안타.<br>
+                            <br><b>희생플라이</b>:<br> 3루 주자가 태그업으로 득점할 수 있도록 멀리 날린 플라이 볼.<br>
+                        </p>
+                    </li>            
+                </ul><br>
+
+                <ul>
+                    <li>
+                        <h3>경기 방법</h3>
+                        <p>
+                            시간 제한 없이 이닝(회)으로 진행된다. <br><br>정규이닝은 9회까지, 연장(동점) 시엔 12회까지 진행한다.<br><br>한 회에는 공격과 수비를 번갈아 가면서 하며
+                            1회초, 1회말로 구분되며 경기장이 홈구장인 팀이 말에 공격을 진행하게 된다.
+                            <br><br>수비측은 투수, 포수, 1루수, 2루수, 3루수, 유격수, 좌익수, 중견수, 우익수를 각자의 수비 위치에 들어가며 공격측은 타순에 따라 1명씩 타석에 들어간다.
+                            <br><br>경기 진행에 따라 쓰리아웃이 되면 공수교대를 한다.     
+                        </p>
+                    </li>
+                </ul><br>
+
+                    <ul>
+                        <h3>경기 규칙</h3>
+                        <li>스트라이크 / 볼
+                        <p>
+                            타자의 겨드랑이부터 무릎까지 높이로 홈플레이트 위를 통과한 공을 스트라이크로 판정한다.<br><br>
+                            스트라이크존에 상관없이 타자가 배트를 휘둘렀을때도 스트라이크로 판정된다.<br><br>
+                            타자가 친 공이 파울 공인 경우 스트라이크로 판정한다. 단, 파울은 2 스트라이크 이후부턴 번트를 제외한 파울 볼은 스트라이크로 카운트 되지 않는다.<br><br>
+                            스트라이크존에 나간 공은 볼로 판정된다.<br><br>
+                            4 볼이 되면 베이스온볼즈가 되어 1루로 나간다.<br>
+                        </p></li>
+                        <li>아웃
+                        <p>
+                            타자가 공을 쳐서 땅에 떨어지기 전에 잡으면 아웃(플라이아웃, 뜬공)된다. <br><br>주자는 수비수가 공을 잡은 이후에 베이스에서 떠나 진루할 수 있다.<br><br>
+                            1루의 경우 공이 1루수에게 가기 전에 타자가 베이스를 밟으면 세이프, 그 전에 도착하지 못하면 아웃된다.
+                        </p></li>
+                        <li>페어/ 파울
+                        <p>
+                            페어 볼: 공이 페어 지역 안으로 들어오는 경우<br><br>
+                            페어 볼: 공이 파울 지역으로 벗어나는 경우
+                    </p></li>
+                    </ul>
+            </div>
+
+            <div id="content4" class="team-content">
+                <br><h2>역사</h2>
+                <p>
+                    야구 기원에 대해서는 두 가지 설이 있다. 하나는 13세기에 영국에서 시작된 크리켓이 라운더스(rounders : 배트와 공, 베이스를 사용한 놀이)가 되고, 이것이 발달하여 야구가 되었다는 것이다. <br><br>19세기 전반 무렵에 영국에서는 배트와 공을 사용하는 놀이가 유행하여 라운더스나 피더, 포코너즈 등으로 불려왔는데, 이것이 미국에 전해져 동부 지방에서 많이 하다가 19세기 중엽 무렵 전국 각지로 퍼져 나갔다. 당시 경기방법은 매우 간단하여, 투구자가 공을 던지면 타자는 이를 치고 베이스로 달리는데, 수비측도 공을 잡는 즉시 베이스로 달려가 수비측이 빠르면 아웃, 타자가 빠르면 세이프가 되었다. 베이스도 오늘날과는 달리 말뚝이나 구멍이었고 인원수도 시합마다 달랐다. <br><br>1830년에는 보스턴(Boston)에서 라운더스를 모방한 타운볼이라는 경기가 시작되었고, 1833년에는 필라델피아(Philadelphia)에서 역시 같은 무렵, 뉴욕(New York)에서도 내용이 약간 다른 타운볼이 선을 보였고, 이와 같은 놀이경기가 발전하여 순수경기로서의 야구로 변천했다는 것이다. <br><br>또 하나의 설은 1907년 운동구 상점을 하는 스폴딩의 의뢰로 구성된 베이스볼 기원조사위원회가 조사한 것으로, 야구는 1839년 뉴욕주 쿠퍼즈타운(Cooperstown)에서 애브너 더블데이(Abner Doubleday) 소장(少將)이 창안했다는 설이다.
+                </p>
+            </div>
+        </section>
+    </div>
+</div>
+<div class="footer">
+    ©입문자를 위한...
+</div>
+</body>
+</html>
