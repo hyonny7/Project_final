@@ -1,0 +1,79 @@
+@media screen and (max-width: 600px) {
+    .hover-content {
+        font-size: 15px; 
+    }
+}
+    @font-face {
+      font-family: 'NEXON Lv2 Gothic';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+  
+  }
+  @font-face {
+      font-family: 'NEXON Lv1 Gothic OTF';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfants_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+  
+  }
+  @font-face {
+      font-family: 'NEXONFootballGothicBA1';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXONFootballGothicBA1.woff') format('woff');
+  
+  }
+
+.container {
+    position: fixed;
+    z-index: 2; /* 초기에는 header 클래스가 창 위에 위치하도록 설정합니다. */
+  }
+
+  .hover-content {
+    display: none; /* 초기에는 숨김 */
+    position: fixed; /* 고정 위치 */
+    top: 0; /* 화면의 상단에 고정합니다. */
+    left: 0;
+    width: 20%; /* 창의 너비를 2/5로 설정 */
+    min-width: 190px; /* 메뉴 창의 최소 너비를 190px 설정 */
+    height: 100%; /* 화면 높이만큼 설정 */
+    background-color: rgba(255, 255, 255, 0.9); /* 투명도를 조절하여 배경을 어둡게 함 */
+    padding: 20px;
+    box-sizing: border-box; /* 내부 패딩을 고려하여 요소의 크기를 계산 */
+    transition: width 0.3s; /* width 속성에 대한 전환 효과 설정 */
+    z-index: -1; /* 기존 페이지 위에 오도록 하지만 초기에는 숨김 */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* 그림자 효과 추가 */
+    font-size: 20px;
+    font-style: none;
+}
+.hover-content h2, .hover-content h3 {
+    margin-right: 15px;
+    text-align: right;
+    transition: font-size 0.3s;
+    white-space: nowrap; /* 텍스트가 줄바꿈되지 않도록 설정 */
+    font-family: 'NEXONFootballGothicBA1', sans-serif;
+    font-weight: 5px;
+}
+.hover-content h2>a, .hover-content h3>a {
+  text-decoration: none;
+  color: black;
+}
+.hover-content h2>a:hover, .hover-content h3>a:hover {
+    font-weight: bold;
+    font-size: larger;
+    color: blue;
+    transition: 0.2s;
+}
+
+  
+  .container:hover .hover-content {
+    display: block; /* 마우스를 올린 경우 창 표시 */
+    width: 20%; /* 창이 열렸을 때 너비를 3/5로 설정 */
+    z-index: 0; /* 창이 열릴 때 header 클래스가 창 아래로 위치하도록 설정합니다. */
+  }
+  
+  .content {
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 10px;
+    position: fixed; /* 고정 위치 */
+    top: 15px; /* 화면 상단으로부터 50px 아래에 고정 */
+    left: 15px; /* 화면 왼쪽으로부터 10px 오른쪽에 고정 */
+}

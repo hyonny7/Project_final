@@ -1,0 +1,239 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+html, body {
+margin: 0;
+padding: 0;
+width: 100%;
+height: 100%;
+margin: 0 auto; /* 수평 가운데 정렬 */
+}
+
+.header {
+width: 100%;
+height: 25%;
+background: white;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+animation: fadeIn 1s ease;
+font-family: 'NEXONFootballGothicBA1', sans-serif;
+font-weight: 5px;
+margin: 0 auto; /* 수평 가운데 정렬 */
+
+}
+
+.main{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto; /* 가운데 정렬을 위해 추가 */
+}
+
+.llll {
+width: 20%;
+height: auto;
+float: left;
+background: white;
+text-align: center;
+margin: 0 auto; /* 수평 가운데 정렬 */
+margin-right: 5%;
+}
+
+.rrrr {
+width: 45%;
+height: auto;
+float: left;
+background: white;
+animation: fadeIn 3s ease;    
+font-family: 'NEXON Lv2 Gothic', sans-serif;
+letter-spacing: 2px;
+margin: 0 auto; /* 수평 가운데 정렬 */
+}
+
+#rules {
+margin-left: 15px;
+text-align: left;
+font-family: 'NEXON Lv2 Gothic', sans-serif;
+letter-spacing: 2px;
+}
+
+.footer {
+width: 100%; 
+height: 50%; 
+clear: both;
+background: black;
+color: grey;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: end;
+position:relative;
+bottom: 0;
+left: 0;
+}
+
+.button {
+    width: auto;
+    height: 45px;
+    border-radius: 55px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 7%;
+    margin-top: 5%;
+    overflow: hidden; /* 내용이 넘칠 경우 숨김 처리 */
+    animation: fadeIn 4s ease;
+    white-space: nowrap; /* 텍스트가 줄바꿈되지 않도록 설정 */
+    transition: box-shadow 0.1s ease-in-out;
+    font-family: 'NEXON Lv2 Gothic', sans-serif;
+    letter-spacing: 2px;
+}
+.button:hover {
+transform: scale(1.1);
+
+}
+
+.b1:hover,.b2:hover,.b3:hover,.b4:hover {
+    box-shadow: 0px 0px 5px 5px rgba(8, 95, 49, 0.5);}
+.button a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'NEXON Lv2 Gothic', sans-serif;
+    letter-spacing: 2px;
+}
+.b1,.b2,.b3,.b4 {
+    background-color: white;
+    border: 8px solid rgb(30, 77, 44);
+}
+h4 {
+    padding-left: 20px; 
+    text-indent: 20px; 
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+
+.initial-message {
+    display: block;
+}
+.team-content {
+    display: none;
+    align-items: center; /* 세로 5중앙 정렬 */
+}
+.main>h2, audio {
+    margin: 0; /* 기본 마진 제거 */
+}
+.main>h3 {
+    display: inline; /* 인라인 요소로 설정하여 가로 정렬 */
+    margin: 0; /* 추가한 부분: h3의 마진을 제거하여 간격을 없앰 */
+}
+img {
+    width: 80%; /* 너비에 맞게 높이를 자동으로 조정 */
+}
+
+
+
+@font-face {
+    font-family: 'NEXON Lv2 Gothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+
+}
+@font-face {
+    font-family: 'NEXONFootballGothicBA1';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXONFootballGothicBA1.woff') format('woff');
+    
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        width: 100%; /* 모바일 환경에서는 최대 너비를 100%로 설정 */
+        margin: 0 auto;
+    }
+
+    .header {
+        height: 30%; /* 헤더 높이를 자동으로 설정하여 콘텐츠에 맞게 조정 */
+        font-size: larger;
+    }
+    div.main {
+        width: 100%; /* 모바일 환경에서는 메인 콘텐츠의 너비를 100%로 설정 */
+        margin-left: 0;
+        margin-right: 0;
+        opacity: 1;
+        margin: 0 auto;
+        height: 200%; /* 높이를 자동으로 설정하여 콘텐츠에 맞게 조정 */
+    }
+    .footer {
+        height: 70px; /* 모바일 환경에 맞게 푸터 높이 조정 */
+    }
+
+    .llll, .rrrr {
+        display: flex; /* 모바일 환경에서는 블록 요소로 배치 */
+        justify-content: space-between; /* 각 버튼을 가능한한 가장 가까운 위치로 배치 */
+        align-items: center; /* 세로 중앙 정렬 */
+        margin-top: 0; /* 모바일 환경에서는 위쪽 간격 제거 */
+        margin-bottom: 0; /* 모바일 환경에서는 아래쪽 간격 제거 */
+        width: 100%; /* 모바일 환경에서는 가로 너비를 꽉 채우도록 설정 */
+        margin: 0 auto;
+        flex-wrap: wrap; /* 요소들이 두 줄로 나뉘도록 설정 */
+
+    }
+    .llll {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        height: auto;
+    }
+    .rrrr {
+        width: 100%;
+        height: auto;
+    }
+    .rrrr #rules {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+    .button {
+		width: 40%;
+        height: 35px;
+        border-radius: 40px;
+        text-align: center;
+        line-height: 60px;
+        font-size: 16px;
+        font-weight: bolder;
+        display: relative;
+        justify-content: center; /* 가로 여백을 균등하게 배치 */
+        align-items: center;
+        overflow: hidden; /* 내용이 넘칠 경우 숨김 처리 */
+        animation: fadeIn 4s ease;
+        white-space: nowrap; /* 텍스트가 줄바꿈되지 않도록 설정 */
+        transition: box-shadow 0.1s ease-in-out;
+        font-family: 'NEXON Lv2 Gothic', sans-serif;
+        letter-spacing: 2px;
+        margin-right: 1px; /* 각 버튼 사이의 간격을 조정합니다 */
+        margin-left: 1px;
+        margin-top: 2%; /* 위아래 간격 추가 */
+    }
+    
+	.b1,.b2,.b3,.b4 {
+    background-color: white;
+    border: 5px solid rgb(30, 77, 44);
+}
+    .b4, .b3 {
+        margin-left: 6%;
+    }
+    .b2, .b1 {
+        margin-right: 6%;
+    }
+}
+
